@@ -23,6 +23,7 @@ const words = ["ground", "control", "to", "major", "tom"];
 const map = function(someArray, callBckFunc) {
   const results = [];
   for (let item of someArray) {
+    
     results.push(callBckFunc(item))
   }
 
