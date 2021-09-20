@@ -1,5 +1,14 @@
 const middle = require('../middle');
-const eqArrays = require('../eqArrays');
-const assertArrayEqual = require('../assertArrayEqual');
+const { assert } = require('chai');
 
-assertArrayEqual(middle([1,2,3]), [2]);
+describe('#middle', () => {
+  it("return [2] when given [1,2,3]", () => {
+    let result = middle([1,2,3]);
+    assert.deepEqual(result, [2]);
+  });
+
+  it("return 'salim' when given ['Hello', 'salim', 'mustafa']", () => {
+    let result = middle(['Hello', 'salim', 'mustafa']);
+    assert.deepEqual(result, ['salim'])
+  })
+})
