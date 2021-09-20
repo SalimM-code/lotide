@@ -1,17 +1,10 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`Assertion Failed: ${actual} !== ${expected}`);
-  }
+const assertEqual = require('./assertEqual');
+
+const tail = function(arry) {
+  arry.shift();
+  return arry;
 };
 
 
-const words = ["yo yo", "Lighthouse", "Labs"]
-const tail = function(arry) {
-  arry.shift();
-  const newArry = arry;
-  return newArry;
-}
+module.exports = tail;
 
-console.log(assertEqual(tail(words).length, 3));
