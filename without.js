@@ -40,3 +40,4 @@ const eqArrays = function(arr1, arr2) {
   // Make sure the original array was not altered by the without function
   assertArrayEqual(words, ["hello", "world", "lighthouse"]);
   
+  module.exports = without;

@@ -36,3 +36,5 @@ console.log(findkey({
   c: "zuleykha",
   d:"yusra"
 }, x => x === "yusra"), "d"));
+
+module.exports = findkey;

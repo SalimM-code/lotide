@@ -17,5 +17,7 @@ const takeUntil = (someArray, callBckFunc) => {
 const results1 = takeUntil(data1, x => x < 0);
 console.log(results1);
 
+module.exports = takeUntil;
+
 
 // as soon as our callBckFunc return true we stop pushing into new array.

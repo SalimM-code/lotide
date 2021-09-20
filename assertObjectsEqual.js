@@ -31,3 +31,5 @@ const assertObjectsEqual = function(actual, expected) {
 };
 
 console.log(assertObjectsEqual({a: "y"}, {a: "y"}));
+
+module.exports = assertObjectsEqual;

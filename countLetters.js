@@ -21,12 +21,10 @@ const countLetters = function(str) {
       output[char] =1
     }
     }
-    
-    
-  
-  
   }
   console.log(output)
   return output
-  }
+  };
+
+  module.exports = countLetters;
   

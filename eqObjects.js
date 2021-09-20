@@ -40,3 +40,5 @@ const abc = { a: "1", b: "2", c: "3" };
 eqObjects(ab, abc); // => false
 
 assertEqual(eqObjects(ab, ba), true);
+
+module.exports = eqObjects;

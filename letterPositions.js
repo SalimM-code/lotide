@@ -30,3 +30,5 @@ const eqArrays = function(arr1, arr2) {
 
     return results;
   }
+
+  module.exports =letterPositions;

@@ -33,3 +33,5 @@ const map = function(someArray, callBckFunc) {
 console.log(assertArrayEqual(map(words, word => word[0]), ['g', 'c', 't', 'm', 't']))
 // const results1 = map(words, word => word[0]);
 // console.log(results1)
+
+module.exports = map;
